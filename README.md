@@ -1,8 +1,9 @@
 # dex-net-docker
 Docker for Berkeley AUTOLAB's Dex-Net Package.
 ### Tested environment
-docker version: 19.04 \
-host PC os : ubuntu 18.04
+Docker version: 19.03.12 \
+Host PC os : ubuntu 18.04
+Container os : ubuntu 16.04
 
 ---
 ## 1. Build image
@@ -45,7 +46,7 @@ RUN apt-get update && \
 docker build -t ssw0536/dexnet-cudagl10.1-ubuntu16.04:init ./
 ```
 ### 2) Run docker container with proper mount option.
-#### 2-1) `Edit docker_run.sh`
+#### 2-1) Edit `docker_run.sh`
 You should modify `docker_run.sh` to make proper mount option. Check the Line 13-14.
 ```bash
 XSOCK=/tmp/.X11-unix
