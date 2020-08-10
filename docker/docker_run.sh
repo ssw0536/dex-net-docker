@@ -7,12 +7,11 @@ xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
 # Run(pull, creat, start, attach) docker
 # option --user: You must use same user name in Dockerfile(ENV USERNAME yourUserName)
 docker run -it \
-        --rm \
 	--gpus all \
         --volume=$XSOCK:$XSOCK:rw \
         --volume=$XAUTH:$XAUTH:rw \
-	--volume=$HOME/ws/dataset:/home/user/dataset:rw \
-	--volume=$HOME/ws/docker_ws/dexnet16-cudagl-test:/home/user/ws:rw \
+        --volume=your/dataset/path:/home/user/dataset:rw \ # volume for dex-net dataset
+        --volume=your/codbase/path:/home/user/ws:rw \ # volume for dex-net codebase
         --env="XAUTHORITY=${XAUTH}" \
         --env="DISPLAY" \
         --user="user" \
