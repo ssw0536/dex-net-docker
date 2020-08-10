@@ -41,8 +41,8 @@ cd ..
 # cd ..
 
 # git clone
+git clone https://github.com/BerkeleyAutomation/autolab_core.git
 git clone https://github.com/ssw0536/perception.git
-git clone https://github.com/BerkeleyAutomation/perception.git
 git clone https://github.com/ssw0536/gqcnn.git
 git clone https://github.com/ssw0536/meshpy.git
 git clone https://github.com/ssw0536/visualization.git
