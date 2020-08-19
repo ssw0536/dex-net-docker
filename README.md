@@ -87,5 +87,21 @@ wget https://raw.githubusercontent.com/ssw0536/dex-net-docker/master/install.sh
 source install.sh
 ```
 ---
+### Install OpenRAVE on ubuntu16.04
+# (optional, for collision checking)
+# install OpenRAVE 0.9 from jeffmahler fork
+```bash
+git clone https://github.com/jeffmahler/openrave.git
+cd openrave
+```
+https://scaron.info/teaching/installing-openrave-on-ubuntu-16.04.html
+https://github.com/rdiankov/openrave/issues/500
+
+```bash
+sudo sh install.sh
+cd ..
+```
+
+
 ## 2. Pull image from docker hub.
 Will be update soon....
